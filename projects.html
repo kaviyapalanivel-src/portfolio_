@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Kaviya Palanivel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">KP</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-teal-400 transition">Home</a>
+                <a href="about.html" class="hover:text-teal-400 transition">About</a>
+                <a href="skills.html" class="hover:text-teal-400 transition">Skills</a>
+                <a href="projects.html" class="text-teal-400">Projects</a>
+                <a href="contact.html" class="hover:text-teal-400 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">My Projects</h1>
+            <p class="text-xl max-w-2xl mx-auto">Showcasing my technical skills through practical applications</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- E-commerce Website -->
+            <div class="project-card mb-20 bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                <div class="md:flex">
+                    <div class="md:w-1/2 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" 
+                             alt="E-commerce Website" 
+                             class="w-full h-full object-cover project-image transition duration-500">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold mb-4 text-gray-800">E-commerce Website</h2>
+                        <p class="text-gray-600 mb-6">
+                            A fully functional e-commerce platform with responsive design and user-friendly interface.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">HTML5</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">CSS3</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Responsive Design</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Key Features</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
+                            <li>Product browsing with categories and filters</li>
+                            <li>Shopping cart management system</li>
+                            <li>Secure payment processing integration</li>
+                            <li>User account creation and management</li>
+                            <li>Responsive design for all device sizes</li>
+                        </ul>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg transition">View Live</a>
+                            <a href="#" class="border-2 border-gray-300 hover:bg-gray-100 text-gray-700 px-6 py-2 rounded-lg transition">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tribute Page -->
+            <div class="project-card mb-20 bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:w-1/2 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg" 
+                             alt="Tribute Page" 
+                             class="w-full h-full object-cover project-image transition duration-500">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold mb-4 text-gray-800">Tribute Page</h2>
+                        <p class="text-gray-600 mb-6">
+                            A responsive tribute page focusing on clean design and seamless user interaction.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">UX Design</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Key Features</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
+                            <li>Clean, minimalist design with focus on content</li>
+                            <li>Smooth scrolling navigation</li>
+                            <li>Interactive timeline of achievements</li>
+                            <li>Responsive layout for all screen sizes</li>
+                            <li>Accessibility-focused markup</li>
+                        </ul>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg transition">View Live</a>
+                            <a href="#" class="border-2 border-gray-300 hover:bg-gray-100 text-gray-700 px-6 py-2 rounded-lg transition">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Citi Job Simulation -->
+            <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                <div class="md:flex">
+                    <div class="md:w-1/2 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg" 
+                             alt="Citi Job Simulation" 
+                             class="w-full h-full object-cover project-image transition duration-500">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h2 class="text-3xl font-bold mb-4 text-gray-800">Citi ICG Technology Job Simulation</h2>
+                        <p class="text-gray-600 mb-6">
+                            Completed a job simulation involving hypothetical tasks to improve Citi's financial systems.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Java</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">UML</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                            <span class="bg-gray-200 px-3 py-1 rounded-full text-sm">Risk Analysis</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Key Contributions</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
+                            <li>Created state diagrams of loan management process using UML</li>
+                            <li>Researched potential machine learning systems for credit risk assessment</li>
+                            <li>Built Java tool for visualizing stock market risk in real time</li>
+                            <li>Provided recommendations for implementing ML in credit risk evaluation</li>
+                        </ul>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg transition">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Kaviya Palanivel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

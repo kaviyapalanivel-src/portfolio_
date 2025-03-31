@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kaviya Palanivel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .contact-input:focus {
+            box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">KP</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-teal-400 transition">Home</a>
+                <a href="about.html" class="hover:text-teal-400 transition">About</a>
+                <a href="skills.html" class="hover:text-teal-400 transition">Skills</a>
+                <a href="projects.html" class="hover:text-teal-400 transition">Projects</a>
+                <a href="./contact.html" class="text-teal-400">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h1>
+            <p class="text-xl max-w-2xl mx-auto">I'm open to new opportunities and collaborations</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block mb-2 text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required 
+                               class="w-full px-4 py-2 rounded border border-gray-300 contact-input focus:outline-none focus:border-teal-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full px-4 py-2 rounded border border-gray-300 contact-input focus:outline-none focus:border-teal-500">
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-gray-700">Subject</label>
+                        <input type="text" id="subject" name="subject" 
+                               class="w-full px-4 py-2 rounded border border-gray-300 contact-input focus:outline-none focus:border-teal-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  class="w-full px-4 py-2 rounded border border-gray-300 contact-input focus:outline-none focus:border-teal-500"></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg transition w-full">
+                        Send Message
+                    </button>
+                </form>
+                <div id="formSuccess" class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-lg">
+                    <i class="fas fa-check-circle mr-2"></i>
+                    Your message has been sent successfully!
+                </div>
+                <div id="formError" class="hidden mt-6 p-4 bg-red-100 text-red-700 rounded-lg">
+                    <i class="fas fa-exclamation-circle mr-2"></i>
+                    There was an error sending your message. Please try again.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Other Ways to Reach Me</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-teal-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Email</h3>
+                    <a href="mailto:kaviyapalanivel001@gmail.com" class="text-teal-500 hover:text-teal-600 transition">
+                        kaviyapalanivel001@gmail.com
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-teal-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Phone</h3>
+                    <a href="tel:+918754303651" class="text-teal-500 hover:text-teal-600 transition">
+                        +91 87543 03651
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-github text-teal-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">GitHub</h3>
+                    <a href="https://github.com/kaviyapalanivel-src" target="_blank" class="text-teal-500 hover:text-teal-600 transition">
+                        github.com/kaviyapalanivel-src
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-linkedin-in text-teal-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/kaviya-palanivel-1b40662b1/" target="_blank" class="text-teal-500 hover:text-teal-600 transition">
+                        linkedin.com/in/kaviya-palanivel-1b40662b1
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Kaviya Palanivel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission (in a real scenario, this would be an AJAX call)
+            const success = Math.random() > 0.2; // 80% chance of success for demo
+            
+            if (success) {
+                document.getElementById('formSuccess').classList.remove('hidden');
+                document.getElementById('formError').classList.add('hidden');
+                document.getElementById('contactForm').reset();
+            } else {
+                document.getElementById('formError').classList.remove('hidden');
+                document.getElementById('formSuccess').classList.add('hidden');
+            }
+            
+            // Scroll to feedback message
+            document.getElementById(success ? 'formSuccess' : 'formError').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
